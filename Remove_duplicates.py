@@ -6,17 +6,12 @@ def removeduplicates(nums):
       nums[i]=nums[j]
   return i+1\
 # Get input from the user
-user_input = input("Enter sorted list of numbers separated by spaces: ")
-
+num = input()
 # Convert input string to a list of integers
-nums = list(map(int, user_input.split()))
-
+nums = list(map(int, num.split()))
 # Make sure input is sorted
 nums.sort()
-
 # Call the function
 k = removeDuplicates(nums)
-
 # Print results
-print("Number of unique elements:", k)
 print("List after removing duplicates:", nums[:k])
