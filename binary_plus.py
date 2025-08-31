@@ -17,3 +17,6 @@ def addBinary(a, b):
 n=int(input())
 m=int(input())
 addBinary(n,m)
+"or"
+s = format(int(a, 2) + int(b, 2), 'b')
+return(s)
