@@ -19,9 +19,9 @@ public class Main{
    public static void main(String[] args){
       Scanner sc=new Scanner(System.in);
       int n=sc.nextInt();
-      String binary=String formate("%32s"+Integer.toBinaryString(n);
+      String binary=String formate("%32s",Integer.toBinaryString(n);
       String res=new StringBuilder(binary).reverse().toString();
-      int num=Integer.parseInt(res);
+      int num=Integer.parseInt(res,2);
       System.out.println(num);
       sc.close(); 
    }
