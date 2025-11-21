@@ -15,3 +15,18 @@ public class Solution {
         scan.close();
     }
 }
+
+//Another version
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        double d = sc.nextDouble();
+        sc.nextLine();
+        System.out.printf("String: %s%nDouble: %s%nInt: %d", sc.nextLine(), d, i);
+    }
+}
+
+    
