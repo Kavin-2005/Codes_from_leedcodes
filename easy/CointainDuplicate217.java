@@ -8,7 +8,7 @@ class Solution {
         }return false;     
     }
 }
-another method
+//another method
   class Solution {
     public boolean containsDuplicate(int[] nums) {
         int count = 0;
@@ -24,6 +24,19 @@ another method
         } else {
             return false;
         }
+    }
+}
+//another(using HashSet,collection)
+    class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer>hs=new HashSet<>();
+        for(int i:nums){
+            if(hs.contains(i)){
+                return true;
+            }
+            hs.add(i);
+        }
+        return false;
     }
 }
 
