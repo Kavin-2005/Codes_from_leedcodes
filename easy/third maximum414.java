@@ -14,3 +14,13 @@ class Solution {
         
     }
 }
+class Solution {
+    public int thirdMax(int[] nums) { 
+        int res[]=Arrays.stream(nums).distinct().toArray();
+        Arrays.sort(res);
+        if(res.length<3){
+            return res[res.length-1];
+        }
+        return res[res.length-3];
+    }
+}
