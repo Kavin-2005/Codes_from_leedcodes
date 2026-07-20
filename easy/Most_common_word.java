@@ -47,3 +47,17 @@ class Solution {
         return ans;
     }
 }
+class Solution {
+    public String mostCommonWord(String para, String[] banned) {
+        para=para.toLowerCase();
+        HashMap<String,Integer> hm=new HashMap<>();
+        para=para.replaceAll("[^a-z]"," ");
+        String words[]=para.split("\\s+");
+        for(int i=0;i<words.length;i++){
+            hm.put(words[i],hm.getOrDefault(words[i],0)+1);
+        }
+        List<Map.Entry<String,Integer>>list=new Arraylist<>(hm.entryset());
+        list.sort((a,b)->b.getValue()-a.getValue());
+          
+    }
+}
