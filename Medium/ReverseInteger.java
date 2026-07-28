@@ -44,6 +44,8 @@ class Main{
   public Static void main(String[] args){
     Scanner sc=new Scanner(System.in);
     Solution s=new Solution();
-    System.out.println(s.reverse(sc));
+    int num=sc.nextInt();
+    System.out.println(s.reverse(num));
+    sc.close();
   }
 }
