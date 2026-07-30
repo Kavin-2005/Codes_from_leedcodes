@@ -10,13 +10,13 @@ class Solution {
                 "", "", "abc", "def", "ghi",
                 "jkl", "mno", "pqrs", "tuv", "wxyz"
         };
-
+//this is for 1 digit
         if (digits.length() == 1) {
             String s = map[digits.charAt(0) - '0'];
             for (char c : s.toCharArray())
                 ans.add(String.valueOf(c));
         }
-
+//this is for 2 digit 
         else if (digits.length() == 2) {
             String first = map[digits.charAt(0) - '0'];
             String second = map[digits.charAt(1) - '0'];
@@ -27,7 +27,7 @@ class Solution {
                 }
             }
         }
-
+//this is for 3 digit
         else if (digits.length() == 3) {
             String first = map[digits.charAt(0) - '0'];
             String second = map[digits.charAt(1) - '0'];
@@ -41,7 +41,7 @@ class Solution {
                 }
             }
         }
-
+//this is for 4 digit
         else if (digits.length() == 4) {
             String first = map[digits.charAt(0) - '0'];
             String second = map[digits.charAt(1) - '0'];
@@ -62,3 +62,5 @@ class Solution {
         return ans;
     }
 }
+// this is done by chatgpt 
+//with the help of my idea
