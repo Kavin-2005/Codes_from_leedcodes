@@ -50,4 +50,25 @@ class Solution {
         return ans;
     }
 }
+//my version 
+class Solution {
+    public int largestInteger(int[] nums, int k) {
+        if(k<=1&&nums.length==2){
+            if(nums[0]==nums[1])
+                return -1;
+            if(nums[0]>nums[1])
+            return nums[0];
+            if(nums[0]<nums[1])
+            return nums[1];
+        }
+
+        if(nums[0]<nums[nums.length-1]){
+            if(nums[nums.length-1]!=nums[nums.length-k]){
+                return nums[nums.length-1];
+
+            }
+        }
+        return nums[0];
+    }
+}
 
