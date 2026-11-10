@@ -10,10 +10,7 @@ class Solution {
                     arr[pos++]=end--;
             }
         }
-        if(s.charAt(s.length()-1)=='I')
         arr[pos]=start;
-        arr[pos]=end;
-
         return arr;
     }
 }
